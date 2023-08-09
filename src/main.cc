@@ -2,7 +2,6 @@
 #include <fstream>
 #include <string>
 #include <vector>
-#include <memory>
 
 std::string getFileName();
 bool openFile(std::ifstream &file, std::string fileName);
@@ -86,7 +85,7 @@ std::vector<std::string> getHeader(std::string const line)
             endIndex = i;
             std::string temp;
 
-            temp.append(line, startIndex + 1, (endIndex - startIndex - 2));
+            temp.append(line, startIndex , (endIndex - startIndex));
 
             lineVector.push_back(temp);
             startIndex = endIndex + 1;
