@@ -25,9 +25,14 @@ cmake --build build && echo '\n\033[1;32mOutput:\033[0m' &&
 ./bin/Linux64/Debug/main
  ```
   Suggested alias - ccbuild
+  
 2. Config Build type to Debug, Compile and Run with fancy prints ()
  ```bash
-echo '\033[1;32mBuild Logs:\033[0m' && cmake -B build -DCMAKE_BUILD_TYPE=Release && echo '\033[1;32mCompile Logs:\033[0m' && cmake --build build && echo '\n\033[1;32mOutput:\033[0m' && ./bin/Linux64/Debug/main
+echo '\033[1;32mBuild Logs:\033[0m' && 
+cmake -B build -DCMAKE_BUILD_TYPE=Release && 
+echo '\033[1;32mCompile Logs:\033[0m' && 
+cmake --build build && echo '\n\033[1;32mOutput:\033[0m' && 
+./bin/Linux64/Debug/main
  ```
  Suggested alias - ccrbuild
 
